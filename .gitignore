@@ -69,3 +69,16 @@ test-*.py
 
 # Deployment files
 deploy-*.sh
+
+# AWS and sensitive configs
+.aws/
+*.pem
+*.key
+*.crt
+config.json
+secrets.json
+
+# Temporary files
+*.tmp
+*.temp
+.cache/

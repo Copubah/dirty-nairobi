@@ -7,36 +7,36 @@ Dirty Nairobi is a full-stack web application that enables citizens to report an
 ## Features
 
 ### Core Functionality
-- **Photo Upload**: Secure image uploads with drag-and-drop interface
-- **Interactive Map**: Leaflet-powered map with marker clustering
-- **Smart Location Search**: Type location names instead of coordinates
-- **Real-time Filtering**: Search and filter reports by description
-- **Responsive Design**: Optimized for mobile and desktop devices
+- Photo Upload: Secure image uploads with drag-and-drop interface
+- Interactive Map: Leaflet-powered map with marker clustering
+- Smart Location Search: Type location names instead of coordinates
+- Real-time Filtering: Search and filter reports by description
+- Responsive Design: Optimized for mobile and desktop devices
 
 ### Technical Features
-- **Real-time Updates**: Automatic map refresh after uploads
-- **Secure Storage**: AWS S3 integration with pre-signed URLs
-- **Modern UI**: Clean, intuitive interface with loading states
-- **Location Intelligence**: OpenStreetMap integration for Nairobi
-- **Data Validation**: Coordinate bounds checking for Nairobi area
+- Real-time Updates: Automatic map refresh after uploads
+- Secure Storage: AWS S3 integration with pre-signed URLs
+- Modern UI: Clean, intuitive interface with loading states
+- Location Intelligence: OpenStreetMap integration for Nairobi
+- Data Validation: Coordinate bounds checking for Nairobi area
 
 ## Architecture
 
-### **Frontend (React.js)**
+### Frontend (React.js)
 - Modern React with hooks and functional components
 - Leaflet for interactive mapping with marker clustering
 - Axios for API communication
 - Real-time location search with OpenStreetMap Nominatim
 - Responsive CSS with mobile-first design
 
-### **Backend (FastAPI)**
+### Backend (FastAPI)
 - RESTful API with automatic OpenAPI documentation
 - SQLAlchemy ORM with PostgreSQL/SQLite support
 - Pydantic for data validation and serialization
 - AWS S3 integration for secure file uploads
 - CORS configuration for cross-origin requests
 
-### **Storage & Database**
+### Storage & Database
 - **Images**: AWS S3 with pre-signed URLs for security
 - **Metadata**: PostgreSQL (production) / SQLite (development)
 - **Caching**: Optimized queries with database indexing
@@ -223,53 +223,52 @@ npm test
 3. Verify map clustering with multiple photos
 4. Test filtering and search functionality
 
-## 🤝 **Contributing**
+## Contributing
 
-1. **Fork the repository**
-2. **Create feature branch**: `git checkout -b feature/amazing-feature`
-3. **Commit changes**: `git commit -m 'Add amazing feature'`
-4. **Push to branch**: `git push origin feature/amazing-feature`
-5. **Open Pull Request**
+1. Fork the repository
+2. Create feature branch: `git checkout -b feature/amazing-feature`
+3. Commit changes: `git commit -m 'Add amazing feature'`
+4. Push to branch: `git push origin feature/amazing-feature`
+5. Open Pull Request
 
-### **Development Guidelines**
+### Development Guidelines
 - Follow PEP 8 for Python code
 - Use ESLint/Prettier for JavaScript code
 - Write tests for new features
 - Update documentation for API changes
 
-## 📄 **License**
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 **Acknowledgments**
+## Acknowledgments
 
-- **OpenStreetMap** for location data and mapping services
-- **Leaflet** for the interactive mapping library
-- **FastAPI** for the modern Python web framework
-- **React** for the frontend framework
-- **AWS** for cloud infrastructure services
+- OpenStreetMap for location data and mapping services
+- Leaflet for the interactive mapping library
+- FastAPI for the modern Python web framework
+- React for the frontend framework
+- AWS for cloud infrastructure services
 
-## 📞 **Support**
+## Support
 
-- **Issues**: [GitHub Issues](https://github.com/yourusername/dirty-nairobi/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/dirty-nairobi/discussions)
-- **Email**: your.email@example.com
+- Issues: [GitHub Issues](https://github.com/Copubah/dirty-nairobi/issues)
+- Discussions: [GitHub Discussions](https://github.com/Copubah/dirty-nairobi/discussions)
 
-## 🗺️ **Roadmap**
+## Roadmap
 
-### **Phase 1: Core Features** ✅
+### Phase 1: Core Features (Complete)
 - [x] Photo upload with location
 - [x] Interactive map with clustering
 - [x] Location search functionality
 - [x] Real-time filtering
 
-### **Phase 2: Enhanced Features** 🚧
+### Phase 2: Enhanced Features (Planned)
 - [ ] User authentication and profiles
 - [ ] Photo categories (plastic, organic, etc.)
 - [ ] Admin dashboard for moderation
 - [ ] Mobile app (React Native)
 
-### **Phase 3: Advanced Features** 📋
+### Phase 3: Advanced Features (Future)
 - [ ] AI-powered image analysis
 - [ ] Integration with city services
 - [ ] Gamification and rewards
@@ -277,4 +276,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Made with ❤️ for a cleaner Nairobi**
+Made for a cleaner Nairobi
