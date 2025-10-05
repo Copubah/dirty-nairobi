@@ -1,16 +1,18 @@
 # GitHub Pages Deployment
 
-## Automatic Deployment Setup
-
-Your React frontend will automatically deploy to GitHub Pages when you push to the main branch.
+## IMPORTANT: You must enable GitHub Pages first!
 
 ## Setup Steps
 
-### 1. Enable GitHub Pages
+### 1. Enable GitHub Pages (REQUIRED)
 1. Go to your GitHub repository: `https://github.com/Copubah/dirty-nairobi`
 2. Click **Settings** tab
-3. Scroll down to **Pages** section
-4. Under **Source**, select **GitHub Actions**
+3. Scroll down to **Pages** section (left sidebar)
+4. Under **Source**, select **Deploy from a branch**
+5. Select **gh-pages** branch (it will be created automatically)
+6. Click **Save**
+
+### 2. The workflow will create the gh-pages branch automatically
 
 ### 2. Update Backend URL
 Once your Railway backend is deployed, update the workflow file:
