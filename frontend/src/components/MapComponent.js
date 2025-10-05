@@ -15,17 +15,17 @@ L.Icon.Default.mergeOptions({
   shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-shadow.png',
 });
 
+// Nairobi coordinates - moved outside component to avoid dependency issues
+const NAIROBI_CENTER = [-1.2921, 36.8219];
+const NAIROBI_BOUNDS = [
+  [-1.5, 36.5], // Southwest
+  [-1.0, 37.2]  // Northeast
+];
+
 const MapComponent = ({ photos, onMarkerClick, isLoading }) => {
   const mapRef = useRef(null);
   const mapInstanceRef = useRef(null);
   const markersRef = useRef(null);
-
-  // Nairobi coordinates
-  const NAIROBI_CENTER = [-1.2921, 36.8219];
-  const NAIROBI_BOUNDS = [
-    [-1.5, 36.5], // Southwest
-    [-1.0, 37.2]  // Northeast
-  ];
 
   // Initialize map
   useEffect(() => {
