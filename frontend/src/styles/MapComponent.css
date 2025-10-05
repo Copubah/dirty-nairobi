@@ -1,0 +1,226 @@
+.map-component {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.map-container {
+  height: 100%;
+  width: 100%;
+}
+
+.map-loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  background-color: white;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.map-loading p {
+  margin: 0;
+  color: #666;
+  font-weight: 500;
+}
+
+.map-empty {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: white;
+  padding: 32px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.map-empty p {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+
+.map-empty small {
+  color: #666;
+  font-size: 14px;
+}
+
+.map-stats {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  background-color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  font-size: 13px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Custom Leaflet Styles */
+.leaflet-container {
+  font-family: inherit;
+}
+
+/* Custom Popup Styles */
+.custom-popup .leaflet-popup-content-wrapper {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.photo-popup {
+  max-width: 280px;
+}
+
+.popup-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.popup-content {
+  padding: 0;
+}
+
+.popup-description {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #333;
+}
+
+.popup-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 12px;
+  color: #666;
+}
+
+.popup-view-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.popup-view-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Marker Cluster Styles */
+.marker-cluster-small {
+  background-color: rgba(181, 226, 140, 0.6);
+}
+
+.marker-cluster-small div {
+  background-color: rgba(110, 204, 57, 0.6);
+}
+
+.marker-cluster-medium {
+  background-color: rgba(241, 211, 87, 0.6);
+}
+
+.marker-cluster-medium div {
+  background-color: rgba(240, 194, 12, 0.6);
+}
+
+.marker-cluster-large {
+  background-color: rgba(253, 156, 115, 0.6);
+}
+
+.marker-cluster-large div {
+  background-color: rgba(241, 128, 23, 0.6);
+}
+
+.marker-cluster {
+  border-radius: 50%;
+}
+
+.marker-cluster div {
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+  margin-top: 5px;
+  text-align: center;
+  border-radius: 50%;
+  font: 12px "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.marker-cluster span {
+  line-height: 30px;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .map-stats {
+    bottom: 12px;
+    left: 12px;
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+  
+  .map-loading {
+    padding: 16px;
+  }
+  
+  .map-empty {
+    padding: 24px;
+    margin: 16px;
+  }
+  
+  .photo-popup {
+    max-width: 240px;
+  }
+  
+  .popup-image {
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .map-stats {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    margin: 8px;
+    display: inline-block;
+  }
+  
+  .photo-popup {
+    max-width: 200px;
+  }
+  
+  .popup-image {
+    height: 100px;
+  }
+  
+  .popup-description {
+    font-size: 13px;
+  }
+  
+  .popup-meta {
+    font-size: 11px;
+  }
+}
