@@ -1,28 +1,26 @@
-# 🌍 Dirty Nairobi
+# Dirty Nairobi
 
-> **A crowdsourced environmental reporting platform for Nairobi**
+A crowdsourced environmental reporting platform for Nairobi
 
 Dirty Nairobi is a full-stack web application that enables citizens to report and visualize littered or dirty places in Nairobi through geotagged photo uploads. The platform features an interactive map with smart location search, real-time filtering, and responsive design for both mobile and desktop users.
 
-![Dirty Nairobi Demo](https://via.placeholder.com/800x400/4CAF50/FFFFFF?text=Dirty+Nairobi+Demo)
+## Features
 
-## ✨ Features
+### Core Functionality
+- **Photo Upload**: Secure image uploads with drag-and-drop interface
+- **Interactive Map**: Leaflet-powered map with marker clustering
+- **Smart Location Search**: Type location names instead of coordinates
+- **Real-time Filtering**: Search and filter reports by description
+- **Responsive Design**: Optimized for mobile and desktop devices
 
-### 🎯 **Core Functionality**
-- **📸 Photo Upload**: Secure image uploads with drag-and-drop interface
-- **🗺️ Interactive Map**: Leaflet-powered map with marker clustering
-- **📍 Smart Location Search**: Type location names instead of coordinates
-- **🔍 Real-time Filtering**: Search and filter reports by description
-- **📱 Responsive Design**: Optimized for mobile and desktop devices
+### Technical Features
+- **Real-time Updates**: Automatic map refresh after uploads
+- **Secure Storage**: AWS S3 integration with pre-signed URLs
+- **Modern UI**: Clean, intuitive interface with loading states
+- **Location Intelligence**: OpenStreetMap integration for Nairobi
+- **Data Validation**: Coordinate bounds checking for Nairobi area
 
-### 🚀 **Technical Features**
-- **⚡ Real-time Updates**: Automatic map refresh after uploads
-- **🔒 Secure Storage**: AWS S3 integration with pre-signed URLs
-- **🎨 Modern UI**: Clean, intuitive interface with loading states
-- **🌐 Location Intelligence**: OpenStreetMap integration for Nairobi
-- **📊 Data Validation**: Coordinate bounds checking for Nairobi area
-
-## 🏗️ **Architecture**
+## Architecture
 
 ### **Frontend (React.js)**
 - Modern React with hooks and functional components
@@ -43,20 +41,20 @@ Dirty Nairobi is a full-stack web application that enables citizens to report an
 - **Metadata**: PostgreSQL (production) / SQLite (development)
 - **Caching**: Optimized queries with database indexing
 
-## 🚀 **Quick Start**
+## Quick Start
 
-### **Prerequisites**
+### Prerequisites
 - Python 3.9+ 
 - Node.js 18+
 - PostgreSQL (for production) or SQLite (for development)
 
-### **1. Clone Repository**
+### 1. Clone Repository
 ```bash
 git clone https://github.com/yourusername/dirty-nairobi.git
 cd dirty-nairobi
 ```
 
-### **2. Backend Setup**
+### 2. Backend Setup
 ```bash
 cd backend
 
@@ -75,9 +73,9 @@ cp .env.example .env
 uvicorn app.main:app --reload
 ```
 
-**Backend will be available at:** http://localhost:8000
+Backend will be available at: http://localhost:8000
 
-### **3. Frontend Setup**
+### 3. Frontend Setup
 ```bash
 cd frontend
 
@@ -91,17 +89,17 @@ echo "REACT_APP_API_URL=http://localhost:8000/api/v1" > .env
 npm start
 ```
 
-**Frontend will be available at:** http://localhost:3000
+Frontend will be available at: http://localhost:3000
 
-### **4. Database Setup**
+### 4. Database Setup
 
-**For Development (SQLite):**
+For Development (SQLite):
 ```bash
 # Database will be created automatically
 python3 -c "from app.core.database import create_tables; create_tables()"
 ```
 
-**For Production (PostgreSQL):**
+For Production (PostgreSQL):
 ```bash
 # Start PostgreSQL with Docker
 cd backend
@@ -111,9 +109,9 @@ docker-compose up -d postgres
 python3 -c "from app.core.database import create_tables; create_tables()"
 ```
 
-## 📱 **Usage**
+## Usage
 
-### **Reporting Environmental Issues**
+### Reporting Environmental Issues
 1. **Upload Photo**: Drag and drop or select an image
 2. **Add Description**: Describe the environmental issue
 3. **Set Location**: 
@@ -121,15 +119,15 @@ python3 -c "from app.core.database import create_tables; create_tables()"
    - Or use "Get Current Location" for GPS
 4. **Submit Report**: Photo and metadata are saved securely
 
-### **Viewing Reports**
+### Viewing Reports
 1. **Interactive Map**: View all reports with clustered markers
 2. **Filter Reports**: Use search box to filter by description
 3. **View Details**: Click markers to see photo and location info
 4. **Navigate**: Zoom and pan to explore different areas
 
-## 🛠️ **Development**
+## Development
 
-### **Project Structure**
+### Project Structure
 ```
 dirty-nairobi/
 ├── backend/                    # FastAPI Python backend
@@ -154,15 +152,15 @@ dirty-nairobi/
 └── docs/                      # Documentation
 ```
 
-### **API Endpoints**
+### API Endpoints
 - `POST /api/v1/upload/presigned-url` - Generate secure upload URL
 - `POST /api/v1/photos` - Save photo metadata
 - `GET /api/v1/photos` - Fetch photos with optional filtering
 - `GET /api/v1/health` - Health check endpoint
 
-### **Environment Variables**
+### Environment Variables
 
-**Backend (.env):**
+Backend (.env):
 ```env
 DATABASE_URL=sqlite:///./dirty_nairobi.db
 AWS_ACCESS_KEY_ID=your_aws_key
@@ -171,30 +169,30 @@ S3_BUCKET_NAME=your_bucket_name
 BACKEND_CORS_ORIGINS=http://localhost:3000
 ```
 
-**Frontend (.env):**
+Frontend (.env):
 ```env
 REACT_APP_API_URL=http://localhost:8000/api/v1
 ```
 
-## 🚀 **Deployment**
+## Deployment
 
-### **Quick Deploy Options**
+### Quick Deploy Options
 
-**Option 1: Netlify + Railway**
+Option 1: Netlify + Railway
 - Frontend: Deploy to Netlify (drag build folder)
 - Backend: Deploy to Railway.app (connect GitHub)
 
-**Option 2: Vercel + Heroku**
+Option 2: Vercel + Heroku
 - Frontend: Deploy to Vercel (drag build folder)
 - Backend: Deploy to Heroku (git push)
 
-**Option 3: AWS (Full Stack)**
+Option 3: AWS (Full Stack)
 - Frontend: AWS Amplify
 - Backend: AWS Lambda + API Gateway
 - Database: AWS RDS
 - Storage: AWS S3
 
-### **Build for Production**
+### Build for Production
 ```bash
 # Frontend
 cd frontend
@@ -205,21 +203,21 @@ cd backend
 pip install -r requirements.txt
 ```
 
-## 🧪 **Testing**
+## Testing
 
-### **Backend Tests**
+### Backend Tests
 ```bash
 cd backend
 pytest
 ```
 
-### **Frontend Tests**
+### Frontend Tests
 ```bash
 cd frontend
 npm test
 ```
 
-### **Manual Testing**
+### Manual Testing
 1. Upload photos with different locations
 2. Test location search with Nairobi areas
 3. Verify map clustering with multiple photos

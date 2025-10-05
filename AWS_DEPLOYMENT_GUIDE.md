@@ -1,6 +1,6 @@
-# 🚀 AWS Deployment Guide for Dirty Nairobi
+# AWS Deployment Guide for Dirty Nairobi
 
-## ✅ **Prerequisites**
+## Prerequisites
 
 1. **AWS Account** with appropriate permissions
 2. **AWS CLI** installed and configured

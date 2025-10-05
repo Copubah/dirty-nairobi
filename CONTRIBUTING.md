@@ -2,14 +2,14 @@
 
 Thank you for your interest in contributing to Dirty Nairobi! This document provides guidelines for contributing to the project.
 
-## 🚀 Getting Started
+## Getting Started
 
 1. **Fork the repository** on GitHub
 2. **Clone your fork** locally
 3. **Set up the development environment** following the README instructions
 4. **Create a new branch** for your feature or bug fix
 
-## 🛠️ Development Setup
+## Development Setup
 
 ### Prerequisites
 - Python 3.9+
@@ -40,7 +40,7 @@ cd backend && uvicorn app.main:app --reload
 cd frontend && npm start
 ```
 
-## 📝 Code Style
+## Code Style
 
 ### Python (Backend)
 - Follow PEP 8 style guidelines
@@ -54,7 +54,7 @@ cd frontend && npm start
 - Use meaningful component and variable names
 - Write JSDoc comments for complex functions
 
-## 🧪 Testing
+## Testing
 
 ### Backend Tests
 ```bash
@@ -75,7 +75,7 @@ npm test
 - [ ] Search and filtering
 - [ ] Mobile responsiveness
 
-## 📋 Pull Request Process
+## Pull Request Process
 
 1. **Create a feature branch** from `main`
    ```bash
@@ -104,7 +104,7 @@ npm test
    - Reference any related issues
    - Include screenshots for UI changes
 
-## 🐛 Bug Reports
+## Bug Reports
 
 When reporting bugs, please include:
 - **Clear description** of the issue
@@ -113,7 +113,7 @@ When reporting bugs, please include:
 - **Screenshots** if applicable
 - **Environment details** (OS, browser, etc.)
 
-## 💡 Feature Requests
+## Feature Requests
 
 For new features:
 - **Describe the feature** and its benefits
@@ -121,7 +121,7 @@ For new features:
 - **Consider implementation complexity**
 - **Discuss with maintainers** before starting work
 
-## 🏷️ Issue Labels
+## Issue Labels
 
 - `bug` - Something isn't working
 - `enhancement` - New feature or request
@@ -129,13 +129,13 @@ For new features:
 - `good first issue` - Good for newcomers
 - `help wanted` - Extra attention needed
 
-## 📞 Getting Help
+## Getting Help
 
 - **GitHub Issues** - For bugs and feature requests
 - **GitHub Discussions** - For questions and general discussion
 - **Code Review** - All contributions are reviewed by maintainers
 
-## 🙏 Recognition
+## Recognition
 
 Contributors will be recognized in:
 - README acknowledgments
