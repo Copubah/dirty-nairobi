@@ -19,7 +19,7 @@ const Header = () => {
         
         <nav className="nav-section">
           <a 
-            href="https://github.com/yourusername/dirty-nairobi" 
+            href="https://github.com/Copubah/dirty-nairobi" 
             target="_blank" 
             rel="noopener noreferrer"
             className="nav-link"
