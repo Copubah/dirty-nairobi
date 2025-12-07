@@ -12,7 +12,7 @@ const Header = () => {
             <MapPin size={24} className="map-icon" />
           </div>
           <div className="title-section">
-            <h1>Dirty Nairobi</h1>
+            <h1>HaiWork</h1>
             <p className="subtitle">Report and visualize environmental issues in Nairobi</p>
           </div>
         </div>

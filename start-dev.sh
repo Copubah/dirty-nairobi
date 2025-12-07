@@ -58,16 +58,16 @@ if ! command -v python3 &> /dev/null; then
     exit 1
 fi
 
-print_status "✅ All prerequisites found!"
+print_status " All prerequisites found!"
 echo ""
 
 # Start PostgreSQL database
-print_header "📊 Starting PostgreSQL Database"
+print_header "Starting PostgreSQL Database"
 print_status "Starting PostgreSQL container..."
 
 cd backend
 if docker-compose up -d postgres; then
-    print_status "✅ PostgreSQL started successfully!"
+    print_status " PostgreSQL started successfully!"
     print_status "Waiting for database to be ready..."
     sleep 5
 else
@@ -80,14 +80,14 @@ print_status "Setting up backend environment..."
 if [ ! -f ".env" ]; then
     print_warning ".env file not found. Creating from .env.example..."
     cp .env.example .env
-    print_warning "⚠️  Please update the .env file with your AWS credentials before running the backend!"
+    print_warning "  Please update the .env file with your AWS credentials before running the backend!"
 fi
 
 cd ..
 
 # Function to start backend
 start_backend() {
-    print_header "🐍 Starting FastAPI Backend"
+    print_header " Starting FastAPI Backend"
     cd backend
     
     # Create virtual environment if it doesn't exist
@@ -101,7 +101,7 @@ start_backend() {
     
     # Try to install dependencies
     if pip install -r requirements.txt; then
-        print_status "✅ Dependencies installed successfully!"
+        print_status "Dependencies installed successfully!"
         
         print_status "Starting FastAPI server..."
         print_status "Backend will be available at: http://localhost:8000"
@@ -126,7 +126,7 @@ start_frontend() {
     
     print_status "Installing Node.js dependencies..."
     if npm install; then
-        print_status "✅ Dependencies installed successfully!"
+        print_status " Dependencies installed successfully!"
         
         print_status "Starting React development server..."
         print_status "Frontend will be available at: http://localhost:3000"
@@ -142,7 +142,7 @@ start_frontend() {
 
 # Ask user what to start
 echo ""
-print_header "🎯 What would you like to start?"
+print_header " What would you like to start?"
 echo "1) Backend only (FastAPI)"
 echo "2) Frontend only (React)"
 echo "3) Both (in separate terminals)"

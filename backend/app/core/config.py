@@ -15,7 +15,7 @@ class Settings(BaseSettings):
     
     # API
     api_v1_str: str = "/api/v1"
-    project_name: str = "Dirty Nairobi API"
+    project_name: str = "HaiWork API"
     
     # CORS
     backend_cors_origins: str = "http://localhost:3000,http://localhost:3001,https://localhost:3000,https://localhost:3001"

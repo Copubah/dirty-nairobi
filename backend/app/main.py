@@ -18,7 +18,7 @@ logger = logging.getLogger(__name__)
 # Create FastAPI app
 app = FastAPI(
     title=settings.project_name,
-    description="API for Dirty Nairobi - A crowdsourced environmental reporting platform",
+    description="API for HaiWork - A crowdsourced environmental reporting platform",
     version="1.0.0",
     openapi_url=f"{settings.api_v1_str}/openapi.json"
 )
@@ -99,7 +99,7 @@ async def health_check():
 async def root():
     """Root endpoint with API information."""
     return {
-        "message": "Welcome to Dirty Nairobi API",
+        "message": "Welcome to HaiWork API",
         "docs": "/docs",
         "health": "/health",
         "api_version": "v1"
